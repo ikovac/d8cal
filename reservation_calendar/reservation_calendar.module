@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains reservation_calendar.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function reservation_calendar_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the reservation_calendar module.
+    case 'help.page.reservation_calendar':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Calendar for content reservations.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function reservation_calendar_theme() {
+  return [
+    'reservation_calendar' => [
+      'variables' => [],
+    ],
+    'usercontent' => [
+      'variables' => ['nodes' => [], 'user' => ''],
+    ],
+  ];
+}

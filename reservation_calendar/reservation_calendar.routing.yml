@@ -1,0 +1,38 @@
+
+reservation_calendar.calendar_render_controller_render:
+  path: '/user/{user}/articles/calendar/{nid}'
+  defaults:
+    _controller: '\Drupal\reservation_calendar\Controller\CalendarRenderController::render'
+    _title: 'Calendar'
+  requirements:
+    _permission: 'access content'
+    user: \d+
+reservation_calendar.calendar_getusercontent:
+  path: '/user/{user}/articles'
+  defaults:
+    _controller: '\Drupal\reservation_calendar\Controller\CalendarRenderController::getUserContent'
+  requirements:
+    _permission: 'access content'
+    user: \d+
+
+reservation_calendar.calendar_api_controller_add:
+  path: '/reservation_calendar/api/add'
+  defaults:
+    _controller: '\Drupal\reservation_calendar\Controller\CalendarApiController::add'
+  requirements:
+    _permission: 'access content'
+  methods: [POST]
+reservation_calendar.calendar_api_controller_delete:
+  path: '/reservation_calendar/api/delete'
+  defaults:
+    _controller: '\Drupal\reservation_calendar\Controller\CalendarApiController::delete'
+  requirements:
+    _permission: 'access content'
+  methods: [DELETE]
+reservation_calendar.calendar_api_controller_update:
+  path: '/reservation_calendar/api/update'
+  defaults:
+    _controller: '\Drupal\reservation_calendar\Controller\CalendarApiController::update'
+  requirements:
+    _permission: 'access content'
+  methods: [PUT]

@@ -1,0 +1,5 @@
+<ul>
+    {% for node in nodes %}
+        <li><a href="{{ path('reservation_calendar.calendar_render_controller_render', {'user': user, 'nid': node.nid}) }}">{{ node.title }}</a></li>
+    {% endfor %}
+</ul>

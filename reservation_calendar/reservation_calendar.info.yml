@@ -1,0 +1,5 @@
+name: 'Reservation calendar'
+type: module
+description: 'Calendar for content reservations.'
+core: 8.x
+package: 'Custom'

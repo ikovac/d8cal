@@ -1,0 +1,15 @@
+<!-- Add you custom twig html here -->
+<div class="calendar-container">
+    <h1>Kalendar rezervacija</h1>
+    <div id="flash-message"></div>
+    <div id="calendar"></div>
+    <div id="interactivDiv">
+        <label>Odabrani datum: </label>
+        <input disabled id="selectedDate" type="date" name="selectedDate" class="form-control"><br>
+        <input id="available" type="radio" name="status" value="available"> Slobodno<br>
+        <input id="unavailable" type="radio" name="status" value="unavailable"> Zauzeto<br>
+        <textarea id="dateNote" rows="4" placeholder="Bilješka"></textarea><br>
+        <button id="clearBtn" class="btn btn-default">Ukloni</button>
+        <button id="saveDateBtn" class="btn btn-primary">Spremi</button>
+    </div>
+</div>

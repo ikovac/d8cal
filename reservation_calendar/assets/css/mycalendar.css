@@ -1,0 +1,23 @@
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none !important;
+    padding: 0 !important;
+}
+
+#interactivDiv {
+    display: none;
+    padding: 20px;
+}
+
+#flash-message {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#calendar {
+    display: inline-block;
+}

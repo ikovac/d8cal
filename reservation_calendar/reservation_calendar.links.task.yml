@@ -1,0 +1,4 @@
+reservation_calendar.calendar_getusercontent:
+  title: Articles
+  route_name: reservation_calendar.calendar_getusercontent
+  base_route: entity.user.canonical

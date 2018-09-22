@@ -1,0 +1,14 @@
+{
+  "name": "drupal/reservation_calendar",
+  "type": "drupal-module",
+  "description": "Calendar for content reservations.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/reservation_calendar",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/reservation_calendar",
+    "source": "http://cgit.drupalcode.org/reservation_calendar"
+  },
+  "require": { }
+}

@@ -1,0 +1,12 @@
+reservation_calendar.main_library:
+  css:
+    base:
+      assets/css/calendar.css: {}
+      assets/css/mycalendar.css: {}
+  js:
+    assets/js/calendar.js: {}
+    assets/js/mycalendar.js: {}
+
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
