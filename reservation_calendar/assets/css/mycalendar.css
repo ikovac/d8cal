@@ -21,3 +21,21 @@ ul, ol, li {
 #calendar {
     display: inline-block;
 }
+
+#clearBtn {
+    border-radius: 5px;
+    background-color: #e6e3e3;
+}
+
+#clearBtn:hover {
+    background-color: #c8c3c3;
+}
+
+#saveDateBtn {
+    background-color: #8BC34A;
+    border-radius: 5px;
+}
+
+#saveDateBtn:hover {
+    background-color: #81b149;
+}
