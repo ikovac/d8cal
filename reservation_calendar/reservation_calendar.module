@@ -16,7 +16,15 @@ function reservation_calendar_help($route_name, RouteMatchInterface $route_match
     case 'help.page.reservation_calendar':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Calendar for content reservations.') . '</p>';
+      $output .= '<p>' . t('Kalendar za rezervacije.') . '</p>';
+      $output .= '<h4>' . t('Kako koristiti?') . '</h4>';
+      $output .= '<ol>';
+      $output .= '<li>' . t('Instalirati modul.') . '</li>';
+      $output .= '<li>' . t('Otići u user profile (my account -> view profile).') . '</li>';
+      $output .= '<li>' . t('Pod tabom Articles nalaze se svi artikli tog usera.') . '</li>';
+      $output .= '<li>' . t('Odabrati artikl.') . '</li>';
+      $output .= '<li>' . t('Na kalendaru odabrati datum rezervacije.') . '</li>';
+      $output .= '</ol>';
       return $output;
 
     default:
